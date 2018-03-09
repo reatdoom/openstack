@@ -34,9 +34,10 @@ class Api extends AbstractApi
             'method' => 'GET',
             'path'   => $this->pathPrefix . '/networks',
             'params' => [
-                'name'     => $this->params->queryName(),
-                'tenantId' => $this->params->queryTenantId(),
-                'status'   => $this->params->queryStatus(),
+                'name'      => $this->params->queryName(),
+                'tenantId'  => $this->params->queryTenantId(),
+                'status'    => $this->params->queryStatus(),
+                'routerExt' => $this->params->queryRouterExt(),
             ],
         ];
     }

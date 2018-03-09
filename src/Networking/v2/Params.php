@@ -403,6 +403,11 @@ class Params extends AbstractParams
         return $this->queryFilter('status');
     }
 
+    public function queryRouterExt(): array
+    {
+        return $this->queryFilter('router:external');
+    }
+
     private function queryFilter($field): array
     {
         return [
